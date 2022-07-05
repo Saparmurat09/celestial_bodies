@@ -278,18 +278,54 @@ INSERT INTO public.galaxy VALUES (6, 'Triangulum Galaxy', 'spiral', 2.73, 'Secon
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.moon VALUES (1, 'Moon', 'our moon', false, 1);
+INSERT INTO public.moon VALUES (2, 'Phobos', 'means fear', false, 4);
+INSERT INTO public.moon VALUES (3, 'Deimos', 'means terror', false, 4);
+INSERT INTO public.moon VALUES (4, 'Europa', 'euro', false, 5);
+INSERT INTO public.moon VALUES (5, 'Io', 'io', false, 5);
+INSERT INTO public.moon VALUES (6, 'Ganymede', 'ganymede', false, 5);
+INSERT INTO public.moon VALUES (7, 'Callisto', 'calisthenics', false, 5);
+INSERT INTO public.moon VALUES (8, 'Amalthea', NULL, false, 5);
+INSERT INTO public.moon VALUES (9, 'Adrastea', NULL, false, 5);
+INSERT INTO public.moon VALUES (10, 'Valetudo', NULL, false, 5);
+INSERT INTO public.moon VALUES (11, 'Thebe', NULL, false, 5);
+INSERT INTO public.moon VALUES (12, 'Elara', NULL, false, 5);
+INSERT INTO public.moon VALUES (13, 'Carme', NULL, false, 5);
+INSERT INTO public.moon VALUES (14, 'Charon', NULL, false, 9);
+INSERT INTO public.moon VALUES (15, 'Triton', NULL, false, 8);
+INSERT INTO public.moon VALUES (16, 'Titan', NULL, false, 6);
+INSERT INTO public.moon VALUES (17, 'Enceladus', NULL, false, 6);
+INSERT INTO public.moon VALUES (18, 'Oberon', NULL, false, 7);
+INSERT INTO public.moon VALUES (19, 'Miranda', NULL, false, 7);
+INSERT INTO public.moon VALUES (20, 'Desdemona', NULL, false, 7);
 
 
 --
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.planet VALUES (1, true, 1, 1, 'Earth');
+INSERT INTO public.planet VALUES (2, false, 1, 0, 'Mercury');
+INSERT INTO public.planet VALUES (3, false, 1, 0, 'Venus');
+INSERT INTO public.planet VALUES (4, false, 1, 2, 'Mars');
+INSERT INTO public.planet VALUES (5, false, 1, 53, 'Jupiter');
+INSERT INTO public.planet VALUES (6, false, 1, 53, 'Saturn');
+INSERT INTO public.planet VALUES (7, false, 1, 27, 'Uranus');
+INSERT INTO public.planet VALUES (8, false, 1, 14, 'Neptune');
+INSERT INTO public.planet VALUES (9, false, 1, 5, 'Pluto');
+INSERT INTO public.planet VALUES (10, false, 1, 1, 'Eris');
+INSERT INTO public.planet VALUES (11, false, 1, 2, 'Haumea');
+INSERT INTO public.planet VALUES (12, false, 1, 0, 'Makemake');
+INSERT INTO public.planet VALUES (13, false, 1, 0, 'Ceres');
 
 
 --
 -- Data for Name: satellite; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.satellite VALUES ('Hubble', 1, 'space telescop named after Edwin Hubble', 1990);
+INSERT INTO public.satellite VALUES ('James Webb', 2, 'space telescop named after James Webb', 2021);
+INSERT INTO public.satellite VALUES ('International Space Station', 3, 'biggest satellite', 1998);
 
 
 --
@@ -315,21 +351,21 @@ SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 6, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 13, true);
 
 
 --
 -- Name: satellite_satellite_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.satellite_satellite_id_seq', 1, false);
+SELECT pg_catalog.setval('public.satellite_satellite_id_seq', 3, true);
 
 
 --
